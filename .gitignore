@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+.DS_Store
+
+# Web Build
+dist/
+build/
+
+# Rust/Tauri Build Files
+src-tauri/target/
+src-tauri/gen/
+src-tauri/Cargo.lock
+
+# Sidecar Binaries (FFmpeg)
+# Hum binary push nahi karenge kyunki wo bohot heavy hai
+src-tauri/bin/*
+!src-tauri/bin/.gitkeep
+
+# Local Env
+.env
+.env.local

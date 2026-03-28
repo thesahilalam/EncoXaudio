@@ -1,0 +1,11 @@
+{
+  "identifier": "default",
+  "description": "Base permissions for EncoXaudio",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "shell:default",
+    "dialog:default",
+    "opener:default"
+  ]
+}

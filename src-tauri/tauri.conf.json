@@ -1,0 +1,41 @@
+{
+  "productName": "EncoXaudio",
+  "version": "0.1.0",
+ "identifier": "com.encoxaudio.desktop",
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "externalBin": [
+      "bin/ffmpeg"
+    ]
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "EncoXaudio",
+        "width": 500,
+        "height": 850,
+        "resizable": true,
+        "label": "main"
+      }
+    ],
+    "security": {
+      "capabilities": [
+        "default"
+      ]
+    }
+  },
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  }
+}
