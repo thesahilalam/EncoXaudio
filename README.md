@@ -1,74 +1,69 @@
-# 🎵 EncoXaudio 
+# EncoXaudio
 
-<p align="center">
-  <img src="src/assets/logo.png" width="120" alt="EncoXaudio Logo" />
-</p>
-
-<p align="center">
-  <b>A high-performance, privacy-first desktop application to extract high-quality audio from video.</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-1.0.0-35C789?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-Personal-orange?style=for-the-badge" />
-</p>
+EncoXaudio is a high-performance desktop application designed to extract high-quality audio from video files instantly. Built using Tauri v2, React, and Rust, it provides a seamless cross-platform experience with a focus on local privacy.
 
 ---
 
-## 🚀 The Vision
-**EncoXaudio** is built for users who value speed and privacy. Unlike online converters that upload your data to the cloud, EncoXaudio processes everything locally on your hardware using a native **Rust backend**. Whether you are a content creator or a music lover, EncoXaudio provides studio-grade audio extraction in seconds.
-
----
-
-## 📥 Download Latest Version
+## Download Latest Version
 
 | Platform | Format | Architecture | Download Link |
 | :--- | :--- | :--- | :--- |
-| **macOS** | `.dmg` | Apple Silicon (M1/M2/M3) | [Download Now](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
-| **Windows** | `.msi` / `.exe` | x64 (Intel/AMD) | [Download Now](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+| macOS | .dmg | Apple Silicon (M1/M2/M3) | [Download](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+| Windows | .msi / .exe | x64 (Intel/AMD) | [Download](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+| Linux | .AppImage / .deb | x64 / ARM64 | [Download](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
 
 ---
 
-## ✨ Pro Features
+## Why EncoXaudio?
 
-- ⚡ **Native Speed:** Uses Rust-powered sidecars for FFmpeg, ensuring zero latency.
-- 🔒 **Privacy First:** No internet required for conversion. Files stay on your disk.
-- 🎨 **Modern Experience:** Beautiful glassmorphic UI with Dark/Light mode support.
-- 🖱️ **Intuitive UX:** Drag & Drop files directly from your Finder or Explorer.
-- 🌐 **Global Reach:** Fully translated into English, Hindi, Spanish, French, Chinese, and Arabic.
-- 📂 **Quick Access:** Locate your converted files instantly with the native "Locate" button.
+- Privacy First: No cloud uploads. All processing happens locally on your hardware.
+- Native Speed: Uses Rust-powered sidecars for FFmpeg to ensure zero latency.
+- Modern UX: Beautiful dark-mode UI with full drag-and-drop functionality.
+- Global Support: Fully translated into English, Hindi, Spanish, French, Chinese, and Arabic.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend:** [React.js](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Backend:** [Rust](https://www.rust-lang.org/)
-- **Framework:** [Tauri v2](https://v2.tauri.app/)
-- **Engine:** [FFmpeg](https://ffmpeg.org/) (Native Sidecar integration)
+- Frontend: React.js, TypeScript, Tailwind CSS
+- Backend: Rust, Tauri v2
+- Engine: FFmpeg (Native Sidecar integration)
 
 ---
 
-## 🗺️ Roadmap
+## How to Build from Source
+
+If you want to run this project locally as a developer:
+
+1. Clone the repo:
+   git clone https://github.com/thesahilalam/EncoXaudio.git
+
+2. Install dependencies:
+   npm install
+
+3. Setup FFmpeg:
+   Place the appropriate FFmpeg binary for your OS in the src-tauri/bin/ folder and rename it following the Tauri sidecar convention.
+
+4. Run in Dev Mode:
+   npm run tauri dev
+
+---
+
+## Roadmap
 
 - [x] macOS (Apple Silicon) Support
 - [x] Windows (x64) Support
-- [ ] Linux (AppImage/Deb) Version - *In Progress*
-- [ ] macOS (Intel) Support
+- [x] Linux Support (AppImage/Deb)
 - [ ] Bulk Conversion Feature
 - [ ] Audio Trimming Tools
 
 ---
 
-## 👨‍💻 Developed By
-
-**Enco (Sahil Alam)**
-- GitHub: [@thesahilalam](https://github.com/thesahilalam)
-- Project Status: Active Development
+## Developer
+Developed by Sahil Alam (enco)
+GitHub: @thesahilalam
 
 ---
 
-## 📝 License
-This project is a personal showcase. All rights reserved. No unauthorized redistribution of source code.
+## License
+Personal Project - All rights reserved.
