@@ -1,69 +1,69 @@
-# EncoXaudio
+<div align="center">
+  <img src="src/assets/logo.png" alt="EncoXaudio Logo" width="120"/>
 
-EncoXaudio is a high-performance desktop application designed to extract high-quality audio from video files instantly. Built using Tauri v2, React, and Rust, it provides a seamless cross-platform experience with a focus on local privacy.
+  # 🎵 EncoXaudio
+
+  **A blazing-fast, privacy-first desktop application to extract high-quality audio from video files.**
+
+  <p>
+    <a href="https://github.com/thesahilalam/EncoXaudio/releases/latest"><img alt="Version" src="https://img.shields.io/github/v/release/thesahilalam/EncoXaudio?color=blue&style=for-the-badge"></a>
+    <a href="https://github.com/thesahilalam/EncoXaudio/releases/latest"><img alt="Platforms" src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows%20%7C%20Linux-success?style=for-the-badge"></a>
+    <a href="https://github.com/thesahilalam/EncoXaudio/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/License-Personal-orange?style=for-the-badge"></a>
+  </p>
+</div>
 
 ---
 
-## Download Latest Version
+## ⚡ Why EncoXaudio?
 
-| Platform | Format | Architecture | Download Link |
+Online converters upload your personal files to the cloud, risking your privacy and wasting your bandwidth. **EncoXaudio** changes that. By leveraging a native Rust backend and an integrated FFmpeg engine, it processes everything 100% locally on your machine at native hardware speeds.
+
+### ✨ Key Features
+- **Cross-Platform:** Beautiful, native experience across macOS, Windows, and Linux.
+- **Privacy Guaranteed:** Zero cloud uploads. Your files never leave your disk.
+- **Hardware Optimized:** Near-instant conversions powered by Tauri v2 and Rust.
+- **Modern UX:** Glassmorphic UI with seamless Drag & Drop functionality.
+- **Multi-Lingual:** Translated into English, Hindi, Spanish, French, Chinese, and Arabic.
+
+---
+
+## 📥 Download & Install
+
+Get the latest stable release for your operating system (v1.0.0):
+
+| Platform | Architecture | Format | Download |
 | :--- | :--- | :--- | :--- |
-| macOS | .dmg | Apple Silicon (M1/M2/M3) | [Download](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
-| Windows | .msi / .exe | x64 (Intel/AMD) | [Download](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
-| Linux | .AppImage / .deb | x64 / ARM64 | [Download](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+| **🍎 macOS** | Apple Silicon (M1/M2/M3) | `.dmg` | [Download for Mac](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+| **🪟 Windows** | x64 (Intel/AMD) | `.msi` / `.exe` | [Download for Windows](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+| **🐧 Linux** | x64 / ARM64 | `.AppImage` / `.deb` / `.rpm` | [Download for Linux](https://github.com/thesahilalam/EncoXaudio/releases/latest) |
+
+> **Note for Linux Users:** The `.AppImage` is portable and runs on most distributions without installation. Just make it executable (`chmod +x`) and run!
 
 ---
 
-## Why EncoXaudio?
+## 🛠️ Tech Stack & Architecture
 
-- Privacy First: No cloud uploads. All processing happens locally on your hardware.
-- Native Speed: Uses Rust-powered sidecars for FFmpeg to ensure zero latency.
-- Modern UX: Beautiful dark-mode UI with full drag-and-drop functionality.
-- Global Support: Fully translated into English, Hindi, Spanish, French, Chinese, and Arabic.
+EncoXaudio bridges modern web technologies with systems programming for maximum efficiency:
 
----
-
-## Tech Stack
-
-- Frontend: React.js, TypeScript, Tailwind CSS
-- Backend: Rust, Tauri v2
-- Engine: FFmpeg (Native Sidecar integration)
+- **Frontend:** React.js, TypeScript, Tailwind CSS, Vite
+- **Core Framework:** Tauri v2
+- **Backend IPC:** Rust
+- **Processing Engine:** FFmpeg (Integrated as a native Rust Sidecar)
 
 ---
 
-## How to Build from Source
+## 💻 Build from Source (For Developers)
 
-If you want to run this project locally as a developer:
+Want to tinker with the code? Follow these steps to set up your local development environment.
 
-1. Clone the repo:
-   git clone https://github.com/thesahilalam/EncoXaudio.git
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+)
+- [Rust](https://rustup.rs/) (latest stable)
+- FFmpeg static binaries
 
-2. Install dependencies:
-   npm install
+### Setup Guide
 
-3. Setup FFmpeg:
-   Place the appropriate FFmpeg binary for your OS in the src-tauri/bin/ folder and rename it following the Tauri sidecar convention.
-
-4. Run in Dev Mode:
-   npm run tauri dev
-
----
-
-## Roadmap
-
-- [x] macOS (Apple Silicon) Support
-- [x] Windows (x64) Support
-- [x] Linux Support (AppImage/Deb)
-- [ ] Bulk Conversion Feature
-- [ ] Audio Trimming Tools
-
----
-
-## Developer
-Developed by Sahil Alam (enco)
-GitHub: @thesahilalam
-
----
-
-## License
-Personal Project - All rights reserved.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/thesahilalam/EncoXaudio.git](https://github.com/thesahilalam/EncoXaudio.git)
+   cd EncoXaudio
